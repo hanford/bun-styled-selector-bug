@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+import styled from "@emotion/styled";
 import React from "react";
 import styles from "../styles/Home.module.css";
 import nextPackage from "next/package.json";
@@ -30,7 +30,33 @@ export default function Home({}) {
         </p>
       </main>
 
-      <footer className={styles.footer}></footer>
+      {typeof window !== "undefined" && (
+        <Footer>
+          <div />
+          <div />
+          <div />
+        </Footer>
+      )}
     </div>
   );
 }
+
+const Footer = styled("div")`
+  background-color: orange;
+  height: 60px;
+  width: 100%;
+
+  @media (max-width: 700px) {
+    background-color: blue;
+
+    div {
+      height: 20px;
+      width: 100px;
+    }
+
+    div:first-of-type,
+    div:last-of-type {
+      background: cyan;
+    }
+  }
+`;
