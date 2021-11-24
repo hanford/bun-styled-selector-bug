@@ -55,10 +55,10 @@ const Footer = styled("footer")`
 
   @media (max-width: 700px) {
     background-color: blue;
+  }
 
-    & > div:first-of-type,
-    & > div:last-of-type {
-      background: cyan;
-    }
+  div:first-of-type,
+  div:last-of-type {
+    background: cyan;
   }
 `;
