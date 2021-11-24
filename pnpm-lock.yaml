@@ -4,7 +4,7 @@ specifiers:
   '@emotion/react': ^11.6.0
   '@emotion/styled': ^11.6.0
   '@types/react': ^17.0.19
-  bun-framework-next: ^12
+  bun-framework-next: ^12.0.6
   next: 12.0.2
   react: beta
   react-dom: beta
@@ -22,7 +22,7 @@ dependencies:
 
 devDependencies:
   '@types/react': 17.0.35
-  bun-framework-next: 12.0.4_next@12.0.2
+  bun-framework-next: 12.0.6_next@12.0.2
   react-refresh: 0.10.0
   typescript: 4.5.2
 
@@ -578,13 +578,14 @@ packages:
     resolution: {integrity: sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=}
     dev: false
 
-  /bun-framework-next/12.0.4_next@12.0.2:
-    resolution: {integrity: sha512-2h98MkRck3LWGA85jZOieVVD1G4zB1qNn6ByRqBUpQ0+vbU7kSE+j2QkxjXxiPpbqtFVpDx8Y97nnG0SOLSlaw==}
+  /bun-framework-next/12.0.6_next@12.0.2:
+    resolution: {integrity: sha512-h6/kCC/5xIKmLlbr/wDU2ZfkIV3VRh6zeXUvvl+iPXGMnW7x4i8J5eSMjrTGW266drEako+swrNuPKDfCxlauA==}
     peerDependencies:
       next: ^12.0.0
     dependencies:
       next: 12.0.2_303424c7252d0a998b3e2ef269d147bd
       react-is: 17.0.2
+      url-polyfill: 1.1.12
     dev: true
 
   /bytes/3.1.0:
@@ -2011,6 +2012,10 @@ packages:
     resolution: {integrity: sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=}
     engines: {node: '>= 0.8'}
     dev: false
+
+  /url-polyfill/1.1.12:
+    resolution: {integrity: sha512-mYFmBHCapZjtcNHW0MDq9967t+z4Dmg5CJ0KqysK3+ZbyoNOWQHksGCTWwDhxGXllkWlOc10Xfko6v4a3ucM6A==}
+    dev: true
 
   /use-subscription/1.5.1_a8287eeb816f3a61086a2ec9626d63b2:
     resolution: {integrity: sha512-Xv2a1P/yReAjAbhylMfFplFKj9GssgTwN7RlcTxBujFQcloStWNDQdc4g4NRWH9xS4i/FDk04vQBptAXoF3VcA==}

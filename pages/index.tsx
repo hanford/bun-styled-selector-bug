@@ -41,21 +41,23 @@ export default function Home({}) {
   );
 }
 
-const Footer = styled("div")`
+const Footer = styled("footer")`
   background-color: orange;
   height: 60px;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  div {
+    height: 60px;
+    width: 100%;
+  }
 
   @media (max-width: 700px) {
     background-color: blue;
 
-    div {
-      height: 20px;
-      width: 100px;
-    }
-
-    div:first-of-type,
-    div:last-of-type {
+    & > div:first-of-type,
+    & > div:last-of-type {
       background: cyan;
     }
   }
