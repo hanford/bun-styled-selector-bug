@@ -7,6 +7,9 @@ Testing:
 ```sh
 $ # Install bun if you haven't!
 $ curl bun.sh/install | bash;
+$ # You may need to reload your terminal for bun to be available
+$ # Generate *.bun files
 $ bun bun --use next
+$ # Start dev server
 $ bun
 ```
