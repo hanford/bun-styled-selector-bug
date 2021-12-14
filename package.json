@@ -2,6 +2,9 @@
   "name": "foo",
   "version": "0.0.48",
   "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
   "dependencies": {
     "@emotion/react": "^11.6.0",
     "@emotion/styled": "^11.6.0",
